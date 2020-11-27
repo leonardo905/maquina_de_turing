@@ -1,0 +1,7 @@
+http://w3.unpocodetodo.info/svg/viewport-y-viewbox.php
+https://www.w3schools.com/cssref/css3_pr_transform.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform
+https://www.w3schools.com/css/css3_2dtransforms.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_translate
+https://getbootstrap.com/docs/4.5/layout/grid/
+https://webdesign.tutsplus.com/es/tutorials/svg-viewport-and-viewbox-for-beginners--cms-30844#:~:text=El%20valor%20del%20atributo%20viewBox,para%20hacerlo%20por%20la%20izquierda.
