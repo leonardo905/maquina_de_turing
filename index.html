@@ -26,7 +26,11 @@
         <div class="col-7">
           <svg class="tm-tape" width="95%" viewBox="0 0 870 70">
             <g class="wrapper" id="padre" transform="translate(0,10)">
-              <g class="tape-cell" id="primer_hijo" transform="translate(-40)">
+              <g class="tape-cell" id="primer_hijo" transform="translate(-90)">
+                <rect width="50" height="50"></rect>
+                <text x="25" y="33"> </text>
+              </g>
+              <g class="tape-cell" transform="translate(-40)">
                 <rect width="50" height="50"></rect>
                 <text x="25" y="33"> </text>
               </g>
@@ -58,17 +62,17 @@
                 <rect width="50" height="50"></rect>
                 <text x="25" y="33"></text>
               </g>
-              <g class="tape-cell inicio_cinta" transform="translate(360)">
+              <g class="tape-cell" transform="translate(360)">
                 <rect width="50" height="50"></rect>
                 <text x="25" y="33"></text>
               </g>
-              <g class="tape-cell" transform="translate(410)">
+              <g class="tape-cell inicio_cinta" transform="translate(410)">
                 <rect width="50" height="50"></rect>
-                <text x="25" y="33"> </text>
+                <text x="25" y="33"></text>
               </g>
               <g class="tape-cell" transform="translate(460)">
                 <rect width="50" height="50"></rect>
-                <text x="25" y="33"> </text>
+                <text x="25" y="33"></text>
               </g>
               <g class="tape-cell" transform="translate(510)">
                 <rect width="50" height="50"></rect>
@@ -76,7 +80,7 @@
               </g>
               <g class="tape-cell" transform="translate(560)">
                 <rect width="50" height="50"></rect>
-                <text x="25" y="33"> </text>
+                <text x="25" y="33"></text>
               </g>
               <g class="tape-cell" transform="translate(610)">
                 <rect width="50" height="50"></rect>
@@ -103,84 +107,18 @@
                 <text x="25" y="33"> </text>
               </g>
               <g class="tape-cell" transform="translate(910)">
-                <rect width="50" height="50"></rect><text x="25" y="33"> </text>
-              </g>
-              <g class="tape-cell" transform="translate(960)">
                 <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1010)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1060)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1110)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1160)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1210)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1260)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1310)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1360)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1410)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1460)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1510)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1560)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1610)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1660)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1710)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
-              </g>
-              <g class="tape-cell" transform="translate(1760)">
-                <rect width="50" height="50"></rect>
-                <text x="25" y="33"></text>
+                <text x="25" y="33"> </text>
               </g>
             </g>
-            <rect id="tape-head" width="60" height="60" x="355" y="5"></rect>
+            <rect id="tape-head" width="60" height="60" x="405" y="5"></rect>
           </svg>
         </div>
         
       </div>
       
       <div id="mensaje_error" style="color: red; font-size: small;">
+        <br>
         <br>
       </div>
   
@@ -198,7 +136,7 @@
       </div>
       <div class="row justify-content-around" style="">
         <div class="col">
-          <button type="button" id="boton_inicio" onclick="boton_inicio()" class="btn btn-outline-primary" id="boton_play">
+          <button type="button" id="boton_inicio" onclick="iniciar_maquina()" class="btn btn-outline-primary" id="boton_play">
             
             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
